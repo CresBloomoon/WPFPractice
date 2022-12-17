@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPractice.HelloWorld", "WPFPractice.HelloWorld\WPFPractice.HelloWorld.csproj", "{ACE4F90C-BC06-4C5E-B129-5B44421F8556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPractice.HelloWorld.CodeHelloWorld", "WPFPractice.HelloWorld.CodeHelloWorld\WPFPractice.HelloWorld.CodeHelloWorld.csproj", "{FB33F2E7-70C6-4B6B-A17D-317F71342713}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACE4F90C-BC06-4C5E-B129-5B44421F8556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE4F90C-BC06-4C5E-B129-5B44421F8556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE4F90C-BC06-4C5E-B129-5B44421F8556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE4F90C-BC06-4C5E-B129-5B44421F8556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB33F2E7-70C6-4B6B-A17D-317F71342713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB33F2E7-70C6-4B6B-A17D-317F71342713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB33F2E7-70C6-4B6B-A17D-317F71342713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB33F2E7-70C6-4B6B-A17D-317F71342713}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77BA9CBC-C21D-4B9B-9294-DC0D55039C5A}
+	EndGlobalSection
+EndGlobal

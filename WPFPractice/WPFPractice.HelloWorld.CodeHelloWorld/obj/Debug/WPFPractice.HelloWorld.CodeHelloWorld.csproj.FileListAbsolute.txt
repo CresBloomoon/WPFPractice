@@ -1,0 +1,6 @@
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld.CodeHelloWorld\bin\Debug\WPFPractice.HelloWorld.CodeHelloWorld.pdb
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld.CodeHelloWorld\obj\Debug\WPFPractice.HelloWorld.CodeHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld.CodeHelloWorld\obj\Debug\WPFPractice.HelloWorld.CodeHelloWorld.pdb
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld.CodeHelloWorld\bin\Debug\WPFPractice.HelloWorld.CodeHelloWorld.exe
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld.CodeHelloWorld\obj\Debug\WPFPractice.HelloWorld.CodeHelloWorld.csproj.SuggestedBindingRedirects.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld.CodeHelloWorld\obj\Debug\WPFPractice.HelloWorld.CodeHelloWorld.exe

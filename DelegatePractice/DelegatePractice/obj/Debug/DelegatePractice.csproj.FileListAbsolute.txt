@@ -1,0 +1,8 @@
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\bin\Debug\DelegatePractice.exe.config
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\bin\Debug\DelegatePractice.exe
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\bin\Debug\DelegatePractice.pdb
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\obj\Debug\DelegatePractice.csproj.AssemblyReference.cache
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\obj\Debug\DelegatePractice.csproj.SuggestedBindingRedirects.cache
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\obj\Debug\DelegatePractice.csproj.CoreCompileInputs.cache
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\obj\Debug\DelegatePractice.exe
+C:\Users\metro\source\repos\WPFPractice\DelegatePractice\DelegatePractice\obj\Debug\DelegatePractice.pdb

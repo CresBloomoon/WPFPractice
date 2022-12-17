@@ -1,0 +1,16 @@
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\bin\Debug\WPFPractice.HelloWorld.exe.config
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\bin\Debug\WPFPractice.HelloWorld.exe
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\bin\Debug\WPFPractice.HelloWorld.pdb
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.csproj.AssemblyReference.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.csproj.SuggestedBindingRedirects.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\MainWindow.g.cs
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\App.g.cs
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld_MarkupCompile.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld_MarkupCompile.lref
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\MainWindow.baml
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.g.resources
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.Properties.Resources.resources
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.csproj.GenerateResource.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.exe
+C:\Users\metro\source\repos\WPFPractice\WPFPractice\WPFPractice.HelloWorld\obj\Debug\WPFPractice.HelloWorld.pdb

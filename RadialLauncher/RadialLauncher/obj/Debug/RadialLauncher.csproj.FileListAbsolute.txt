@@ -1,0 +1,4 @@
+C:\Users\metro\source\repos\WPFPractice\RadialLauncher\RadialLauncher\obj\Debug\RadialLauncher.csproj.AssemblyReference.cache
+C:\Users\metro\source\repos\WPFPractice\RadialLauncher\RadialLauncher\obj\Debug\RadialLauncher.csproj.SuggestedBindingRedirects.cache
+C:\Users\metro\source\repos\WPFPractice\RadialLauncher\RadialLauncher\obj\Debug\App.g.cs
+C:\Users\metro\source\repos\WPFPractice\RadialLauncher\RadialLauncher\obj\Debug\RadialLauncher_MarkupCompile.cache

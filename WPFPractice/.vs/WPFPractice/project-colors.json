@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ace4f90c-bc06-4c5e-b129-5b44421f8556": {
+      "ProjectGuid": "ace4f90c-bc06-4c5e-b129-5b44421f8556",
+      "DisplayName": "WPFPractice.HelloWorld",
+      "ColorIndex": 0
+    },
+    "fb33f2e7-70c6-4b6b-a17d-317f71342713": {
+      "ProjectGuid": "fb33f2e7-70c6-4b6b-a17d-317f71342713",
+      "DisplayName": "WPFPractice.HelloWorld.CodeHelloWorld",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
