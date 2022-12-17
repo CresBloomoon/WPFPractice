@@ -24,7 +24,18 @@ namespace DelegatePractice
             }
         }
 
+        private void RaiseNameChanged()
+        {
+            var h = this.NameChanged;
+            if (h != null)
+            {
+                Console.WriteLine("イベントを発生させます");
+                h(this, EventArgs.Empty);
+            }
+        }
+
         public event EventHandler NameChanged;
+
         static void Main(string[] args)
         {
 
