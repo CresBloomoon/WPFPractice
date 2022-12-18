@@ -27,7 +27,8 @@
                    VerticalAlignment="Center"/>
         <TextBox   Grid.Row="0"
                    Grid.Column="1"
-                   Margin="2"/>
+                   Margin="2"
+                   Text="{Binding Lhs}"/>
         <TextBlock Grid.Row="1"
                    Grid.Column="0"
                    Text="割る数"
@@ -35,7 +36,8 @@
                    VerticalAlignment="Center"/>
         <TextBox   Grid.Row="1"
                    Grid.Column="1"
-                   Margin="2"/>
+                   Margin="2"
+                   Text="{Binding Rhs}"/>
         <Button    Grid.Row="2"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
@@ -49,6 +51,7 @@
         <TextBox   Grid.Row="3"
                    Grid.Column="1"
                    IsReadOnly="True"
-                   Margin="2"/>
+                   Margin="2"
+                   Text="{Binding Result, Mode=OneWay}"/>
     </Grid>
 </Window>
