@@ -28,7 +28,8 @@
         <TextBox   Grid.Row="0"
                    Grid.Column="1"
                    Margin="2"
-                   Text="{Binding Lhs}"/>
+                   Text="{Binding Lhs,
+                          UpdateSourceTrigger=PropertyChanged}"/>
         <TextBlock Grid.Row="1"
                    Grid.Column="0"
                    Text="割る数"
@@ -37,7 +38,8 @@
         <TextBox   Grid.Row="1"
                    Grid.Column="1"
                    Margin="2"
-                   Text="{Binding Rhs}"/>
+                   Text="{Binding Rhs,
+                          UpdateSourceTrigger=PropertyChanged}"/>
         <Button    Grid.Row="2"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"

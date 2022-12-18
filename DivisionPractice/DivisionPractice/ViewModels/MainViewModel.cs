@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DivisionPractice.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,12 @@ namespace DivisionPractice.ViewModels
 {
     internal class MainViewModel : ViewModelBase
     {
+        private Calculator _calc;
+        public MainViewModel()
+        {
+            this._calc = new Calculator();
+        }
+        
         private string _lhs;
         /// <summary>
         /// 割られる数に指定される文字列を取得または設定します。
@@ -15,7 +22,15 @@ namespace DivisionPractice.ViewModels
         public string Lhs
         {
             get { return this._lhs; }
-            set { SetProperty(ref this._lhs, value); }
+            set
+            {
+                if (SetProperty(ref this._lhs, value))
+                {
+                    //割られる数が変更されると、実行可能判別処理の結果が変わる可能性があるため
+                    //RaiseCanExecuteChanged()を読んで通知させる。
+                    this.DivCommand.RaiseCanExecuteChanged();
+                }
+            }
         }
 
         private string _rhs;
@@ -25,7 +40,15 @@ namespace DivisionPractice.ViewModels
         public string Rhs
         {
             get { return this._rhs; }
-            set { SetProperty(ref this._rhs, value); }
+            set
+            {
+                if (SetProperty(ref this._rhs, value))
+                {
+                    //割る数が変更されると、実行可能判別処理の結果が変わる可能性があるため
+                    //RaiseCanExecuteChanged()を読んで通知させる。
+                    this.DivCommand.RaiseCanExecuteChanged();
+                }
+            }
         }
 
         private string _result;
@@ -50,6 +73,16 @@ namespace DivisionPractice.ViewModels
                     _ =>
                     {
                         OnDivision();
+                    },
+                    _ =>
+                    {
+                        var dummy = 0.0;
+                        
+                        //割られる数がdouble型へ変換できなければコントロールをグレーアウトさせる。
+                        if (!double.TryParse(this.Lhs, out dummy)) return false;
+                        //割る数がdouble型へ変換できなければコントロールをグレーアウトさせる。
+                        if (!double.TryParse(this.Rhs, out dummy)) return false;
+                        return true;
                     }));
             }
         }
@@ -59,7 +92,14 @@ namespace DivisionPractice.ViewModels
         /// </summary>
         private void OnDivision()
         {
-            throw new System.NotImplementedException();
+            var lhs = 0.0;
+            var rhs = 0.0;
+            if (!double.TryParse(this.Lhs, out lhs)) return;
+            if (!double.TryParse(this.Rhs, out rhs)) return;
+            this._calc.Lhs = lhs;
+            this._calc.Rhs = rhs;
+            this._calc.ExecuteDiv();
+            this.Result = this._calc.Result.ToString();
         }
     }
 }

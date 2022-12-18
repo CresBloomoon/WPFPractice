@@ -143,3 +143,4 @@ C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\De
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\DivisionPractice.csproj.CopyComplete
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\DivisionPractice.exe
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\DivisionPractice.pdb
+C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\DivisionPractice.csproj.AssemblyReference.cache
