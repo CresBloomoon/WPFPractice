@@ -56,6 +56,12 @@ namespace MVVM
             }
         }
 
+        public void RaiseCanExecuteChanged()
+        {
+            var h = this.CanExecuteChanged;
+            if (h != null) h(this, EventArgs.Empty);
+        }
+
         #endregion ICommandの実装
     }
 }

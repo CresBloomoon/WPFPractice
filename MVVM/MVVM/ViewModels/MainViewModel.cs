@@ -26,7 +26,10 @@ namespace MVVM.ViewModels
             {
                 if (SetProperty(ref this._inputString, value))
                 {
+                    //入力された文字列を大文字に変換します
                     this.UpperString = this._inputString.ToUpper();
+                    //コマンドの実行可能判別結果に影響を与えているので変更通知を行います
+                    this.ClearCommand.RaiseCanExecuteChanged();
                     System.Diagnostics.Debug.WriteLine("Upperstring=" + this.UpperString);
                 }
             }
@@ -43,7 +46,10 @@ namespace MVVM.ViewModels
                 if (this._clearCommand == null)
                 {
                     this._clearCommand = new DelegateCommand(_ =>
-                    this.InputString = String.Empty);
+                    {
+                        this.InputString = string.Empty;
+                    },
+                    _ => !string.IsNullOrEmpty(this.UpperString));
                 }
                 return this._clearCommand;
             }
