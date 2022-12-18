@@ -24,5 +24,16 @@ namespace MenuBar.ViewModels
                     }));
             }
         }
+
+        private Action<bool, string> _dialogCallback;
+
+        /// <summary>
+        /// ダイアログに対するコールバックを取得します。
+        /// </summary>
+        public Action<bool, string> DialogCallback
+        {
+            get { return this._dialogCallback; }
+            private set { SetProperty(ref this._dialogCallback, value); }
+        }
     }
 }
