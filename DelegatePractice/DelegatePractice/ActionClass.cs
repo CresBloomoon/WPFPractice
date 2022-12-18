@@ -8,5 +8,6 @@ namespace DelegatePractice
 {
     internal class ActionClass
     {
+
     }
 }

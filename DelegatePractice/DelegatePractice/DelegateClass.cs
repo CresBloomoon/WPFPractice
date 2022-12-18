@@ -10,22 +10,22 @@ namespace DelegatePractice
     {
         public delegate void del_func(int val);
 
-        public static void func1(int val)
+        public static int func1(int val)
         {
             Console.WriteLine($"func1 is executed. val + 1 = {val + 1}");
-            return;
+            return val + 1;
         }
 
-        public static void func2(int val)
+        public static int func2(int val)
         {
             Console.WriteLine($"func2 is executed. val + 2 = {val + 2}");
-            return;
+            return val + 2;
         }
         
-        public static void func3(int val)
+        public static int func3(int val)
         {
             Console.WriteLine($"func3 is executed. val + 3 = {val + 3}");
-            return;
+            return val + 3;
         }
 
     }
