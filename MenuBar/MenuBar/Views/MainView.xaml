@@ -12,7 +12,11 @@
             <MenuItem Header="ファイル（_F）">
                 <MenuItem Header="開く（_O）"
                           Command="{Binding OpenFileCommand}"
-                          b:CommonDialogBehavior.Callback="{Binding DialogCallback}"/>
+                          b:CommonDialogBehavior.Title="ファイルを開く"
+                          b:CommonDialogBehavior.Filter="画像ファイル(*.bmp; *.jpg; *.png)|*.bmp;*.jpg;*.png|すべてのファイル (*.*)|*.*"
+                          b:CommonDialogBehavior.Multiselect="False"
+                          b:CommonDialogBehavior.Callback="{Binding DialogCallback}"
+                          />
             </MenuItem>
             <MenuItem Header="ヘルプ（_H）"/>
         </Menu>
