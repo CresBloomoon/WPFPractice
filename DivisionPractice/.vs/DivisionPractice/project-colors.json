@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe46b5-d086-462e-8b4d-704633519bf0": {
+      "ProjectGuid": "a2fe46b5-d086-462e-8b4d-704633519bf0",
+      "DisplayName": "DivisionPractice",
+      "ColorIndex": 0
+    },
+    "f3d0415d-face-418b-aa36-e132eb9c30be": {
+      "ProjectGuid": "f3d0415d-face-418b-aa36-e132eb9c30be",
+      "DisplayName": "MVVM",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
