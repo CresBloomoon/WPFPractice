@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Menubar.Properties
+namespace MenuBar.Properties
 {
 
 
