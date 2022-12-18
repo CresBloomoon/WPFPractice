@@ -129,7 +129,6 @@ C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\bin\De
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\bin\Debug\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\DivisionPractice.csproj.AssemblyReference.cache
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\DivisionPractice.csproj.SuggestedBindingRedirects.cache
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\Views\MainView.g.cs
 C:\Users\metro\source\repos\WPFPractice\DivisionPractice\DivisionPractice\obj\Debug\App.g.cs

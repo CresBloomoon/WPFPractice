@@ -1,4 +1,3 @@
-C:\Users\metro\source\repos\WPFPractice\MVVM\MVVM\obj\Debug\MVVM.csproj.AssemblyReference.cache
 C:\Users\metro\source\repos\WPFPractice\MVVM\MVVM\obj\Debug\MVVM.csproj.SuggestedBindingRedirects.cache
 C:\Users\metro\source\repos\WPFPractice\MVVM\MVVM\obj\Debug\Views\MainWIndow.g.cs
 C:\Users\metro\source\repos\WPFPractice\MVVM\MVVM\obj\Debug\MVVM_MarkupCompile.cache

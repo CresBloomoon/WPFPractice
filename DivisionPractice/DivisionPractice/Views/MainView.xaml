@@ -42,7 +42,8 @@
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Content="割り算する"
-                   Margin="2"/>
+                   Margin="2"
+                   Command="{Binding DivCommand}"/>
         <TextBlock Grid.Row="3"
                    Grid.Column="0"
                    Text="結果"
