@@ -3,41 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DelegatePractice.DelegateClass;
 
 namespace DelegatePractice
 {
     internal class Program
     {
-        private string _name;
-
-        public string Name
-        {
-            get { return _name; }
-            set
-            {
-                if (this._name != value)
-                {
-                    this._name = value;
-                    Console.WriteLine("名前が変更されました");
-                    RaiseNameChanged();
-                }
-            }
-        }
-
-        private void RaiseNameChanged()
-        {
-            var h = this.NameChanged;
-            if (h != null)
-            {
-                Console.WriteLine("イベントを発生させます");
-                h(this, EventArgs.Empty);
-            }
-        }
-
-        public event EventHandler NameChanged;
 
         static void Main(string[] args)
         {
+            int value = 0;
+            del_func del_func_instance = new del_func(func1);
+            del_func_instance += new del_func(func2);
+            del_func_instance += new del_func(func3);
+
+            del_func_instance(value);
 
 
 
