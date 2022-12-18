@@ -46,6 +46,104 @@ namespace MenuBar.Views.Behaviors
 
         #endregion Callback 添付プロパティ 
 
+        #region Title 添付プロパティ
+        /// <summary>
+        /// string型のTitle添付プロパティを定義します。
+        /// </summary>
+        public static readonly DependencyProperty TitleProperty =
+            DependencyProperty.RegisterAttached("Title",
+                                                typeof(string),
+                                                typeof(CommonDialogBehavior),
+                                                new PropertyMetadata("ファイルを開く"));
+
+        /// <summary>
+        /// Title添付プロパティを取得します。
+        /// </summary>
+        /// <param name="target">対象とするDependencyObjectを指定します。</param>
+        /// <returns>取得した値を返します。</returns>
+        public static string GetTitle(DependencyObject target)
+        {
+            return (string)target.GetValue(TitleProperty);
+        }
+
+        /// <summary>
+        /// Title添付プロパティを設定します。
+        /// </summary>
+        /// <param name="target">対象とするDependencyObjectを指定します。</param>
+        /// <param name="value">設定する値を指定します。</param>
+        public static void SetTitle(DependencyObject target, string value)
+        {
+            target.SetValue (TitleProperty, value);
+        }
+        #endregion Title 添付プロパティ
+
+        #region Filter 添付プロパティ
+        /// <summary>
+        /// string型のFilter添付プロパティを定義します。
+        /// </summary>
+        public static readonly DependencyProperty FilterProperty =
+            DependencyProperty.RegisterAttached("Filter",
+                                                typeof(string),
+                                                typeof(CommonDialogBehavior),
+                                                new PropertyMetadata("すべてのファイル(*.*)|*.*"));
+
+        /// <summary>
+        /// Filter添付プロパティを取得します
+        /// </summary>
+        /// <param name="target"></param>
+        /// <param name="value"></param>
+        public static string GetFilter(DependencyObject target)
+        {
+            return (string)target.GetValue(FilterProperty);
+        }
+
+        /// <summary>
+        /// Filter添付プロパティを設定します。
+        /// </summary>
+        /// <param name="target"></param>
+        /// <param name="value"></param>
+        public static void SetFilter(DependencyObject target, string value)
+        {
+            target.SetValue(FilterProperty, value);
+        }
+        #endregion Filter 添付プロパティ
+
+        #region Multiselect 添付プロパティ
+        /// <summary>
+        /// bool型のMultiselect添付プロパティを定義します。
+        /// </summary>
+        public static readonly DependencyProperty MultiselectProperty =
+            DependencyProperty.RegisterAttached("Multiselect",
+                                                typeof(bool),
+                                                typeof(CommonDialogBehavior),
+                                                new PropertyMetadata(true));
+
+        /// <summary>
+        /// Multiselect添付プロパティを設定します。
+        /// </summary>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static bool GetMultiselect(DependencyObject target)
+        {
+            return (bool)target.GetValue(MultiselectProperty);
+        }
+
+        public static void SetMultiselect(DependencyObject target, bool value)
+        {
+            target.SetValue(MultiselectProperty, value);
+        }
+        #endregion Multiselect 添付プロパティ
+
+
+
+
+
+
+
+
+
+
+
         /// <summary>
         /// Callback添付プロパティ変更イベントハンドラ
         /// </summary>
@@ -59,9 +157,9 @@ namespace MenuBar.Views.Behaviors
             {
                 var dlg = new OpenFileDialog()
                 {
-                    Title = "ファイルを開きましょう",
-                    Filter = "画像ファイル（*.bmp; *.jpg; *.png)|*.bmp;*.jpg;*.png|すべてのファイル(*.*)|*.*",
-                    Multiselect = false,
+                    Title = GetTitle(sender),
+                    Filter = GetFilter(sender),
+                    Multiselect = GetMultiselect(sender),
                 };
                 var owner = Window.GetWindow(sender);
                 var result = dlg.ShowDialog(owner);
