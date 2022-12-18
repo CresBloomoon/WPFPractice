@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace MenuBar.Views.Behaviors
             DependencyProperty.RegisterAttached("Callback",
                                                 typeof(Action<bool, string>),
                                                 typeof(CommonDialogBehavior),
-                                                new PropertyMetadata(null));
+                                                new PropertyMetadata(null, OnCallbackPropertyChanged));
 
         /// <summary>
         /// Callback添付プロパティを取得します。
@@ -44,5 +45,28 @@ namespace MenuBar.Views.Behaviors
         }
 
         #endregion Callback 添付プロパティ 
+
+        /// <summary>
+        /// Callback添付プロパティ変更イベントハンドラ
+        /// </summary>
+        /// <param name="sender">イベント発生元</param>
+        /// <param name="e">イベント引数</param>
+        private static void OnCallbackPropertyChanged(DependencyObject sender,
+                                                      DependencyPropertyChangedEventArgs e)
+        {
+            var callback = GetCallback(sender);
+            if (callback != null)
+            {
+                var dlg = new OpenFileDialog()
+                {
+                    Title = "ファイルを開きましょう",
+                    Filter = "画像ファイル（*.bmp; *.jpg; *.png)|*.bmp;*.jpg;*.png|すべてのファイル(*.*)|*.*",
+                    Multiselect = false,
+                };
+                var owner = Window.GetWindow(sender);
+                var result = dlg.ShowDialog(owner);
+                callback(result.Value, dlg.FileName);
+            }
+        }
     }
 }

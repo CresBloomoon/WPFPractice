@@ -20,7 +20,7 @@ namespace MenuBar.ViewModels
                 return this._openFileCommand ?? (this._openFileCommand = new DelegateCommand(
                     _ =>
                     {
-                        System.Diagnostics.Debug.WriteLine("ファイルを開きます。");
+                        this.DialogCallback = OnDialogCallback;
                     }));
             }
         }
@@ -34,6 +34,12 @@ namespace MenuBar.ViewModels
         {
             get { return this._dialogCallback; }
             private set { SetProperty(ref this._dialogCallback, value); }
+        }
+
+        private void OnDialogCallback(bool isOK, string filePath)
+        {
+            this.DialogCallback = null;
+            System.Diagnostics.Debug.WriteLine("コールバック処理を行います");
         }
     }
 }
