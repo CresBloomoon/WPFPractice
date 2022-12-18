@@ -8,60 +8,45 @@ using System.Threading.Tasks;
 
 namespace MVVM.ViewModels
 {
-    internal class MainViewModel : INotifyPropertyChanged
+    internal class MainViewModel : NotificationObject
     {
         private string _upperString;
 
         public string UpperString
         {
-            get { return _upperString; }
+            get { return this._upperString; }
             private set { SetProperty(ref this._upperString, value); }
         }
 
         private string _inputString;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void RaisePropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            var h = this.PropertyChanged;
-            if (h != null)
-            {
-                h(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-
         public string InputString
         {
-            get { return _inputString; }
+            get { return this._inputString; }
             set
             {
                 if (SetProperty(ref this._inputString, value))
                 {
                     this.UpperString = this._inputString.ToUpper();
-                    System.Diagnostics.Debug.WriteLine("UpperString=" + this.UpperString);
+                    System.Diagnostics.Debug.WriteLine("Upperstring=" + this.UpperString);
                 }
             }
         }
 
+        private DelegateCommand _clearCommand;
         /// <summary>
-        /// プロパティ値を変更するヘルパ
+        /// クリアコマンドを取得します
         /// </summary>
-        /// <typeparam name="T">プロパティの型</typeparam>
-        /// <param name="target">変更するプロパティの実態をref指定</param>
-        /// <param name="value">変更後の値を指定</param>
-        /// <param name="propertyName">プロパティ名を指定</param>
-        /// <returns>プロパティ値に変更があった場合にtrueを返す</returns>
-        private bool SetProperty<T>(ref T target,
-                                        T value,
-                                        [CallerMemberName] string propertyName = null)
+        public DelegateCommand ClearCommand
         {
-            if (Equals(target, value))
+            get
             {
-                return false;
+                if (this._clearCommand == null)
+                {
+                    this._clearCommand = new DelegateCommand(_ =>
+                    this.InputString = String.Empty);
+                }
+                return this._clearCommand;
             }
-            target = value;
-            RaisePropertyChanged(propertyName);
-            return true;
         }
     }
 }
