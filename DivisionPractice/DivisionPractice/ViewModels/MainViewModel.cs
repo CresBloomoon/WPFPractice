@@ -38,6 +38,28 @@ namespace DivisionPractice.ViewModels
             set { SetProperty(ref this._result, value); }
         }
 
+        private DelegateCommand _divCommand;
+        /// <summary>
+        /// 割り算コマンドを取得します。
+        /// </summary>
+        public DelegateCommand DivCommand
+        {
+            get
+            {
+                return this._divCommand ?? (this._divCommand = new DelegateCommand(
+                    _ =>
+                    {
+                        OnDivision();
+                    }));
+            }
+        }
 
+        /// <summary>
+        /// 割り算を実行します。
+        /// </summary>
+        private void OnDivision()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
