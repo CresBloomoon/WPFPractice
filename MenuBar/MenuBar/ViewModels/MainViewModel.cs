@@ -41,5 +41,43 @@ namespace MenuBar.ViewModels
             this.DialogCallback = null;
             System.Diagnostics.Debug.WriteLine("コールバック処理を行います");
         }
+
+        #region アプリケーションを終了する
+        public Func<bool> ClosingCallback
+        {
+            get { return OnExit; }
+        }
+
+        private DelegateCommand _exitCommand;
+        public DelegateCommand ExitCommand
+        {
+            get
+            {
+                return this._exitCommand ?? (this._exitCommand = new DelegateCommand(
+                    _ =>
+                    {
+                        OnExit();
+                    }));
+            }
+        }
+
+        /// <summary>
+        /// アプリケーションを終了します。
+        /// </summary>
+        /// <returns></returns>
+        private bool OnExit()
+        {
+            if (this._counter < 3)
+            {
+                this._counter++;
+                return false;
+            }
+
+            App.Current.Shutdown();
+            return true;
+        }
+
+        private int _counter;
+        #endregion アプリケーションを終了する
     }
 }
