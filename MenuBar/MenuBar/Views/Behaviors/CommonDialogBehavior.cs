@@ -134,7 +134,33 @@ namespace MenuBar.Views.Behaviors
         }
         #endregion Multiselect 添付プロパティ
 
+        #region アプリケーションを終了する
+        private DelegateCommand _exitCommand;
 
+        /// <summary>
+        /// アプリケーション終了コマンドを取得します。
+        /// </summary>
+        public DelegateCommand ExitCommand
+        {
+            get
+            {
+                return this._exitCommand ?? (this._exitCommand = new DelegateCommand(
+                    _ =>
+                    {
+                        OnExit();
+                    }));
+            }
+        }
+
+        /// <summary>
+        /// アプリケーションを終了します。
+        /// </summary>
+        /// <exception cref="NotImplementedException"></exception>
+        private void OnExit()
+        {
+            App.Current.Shutdown();
+        }
+        #endregion アプリケーションを終了する
 
 
 
