@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:b="clr-namespace:MenuBar.Views.Behaviors"
+        xmlns:vw="clr-namespace:MenuBar.Views"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuBar.Views"
         mc:Ignorable="d"
@@ -23,7 +24,15 @@
                           Command="{Binding ExitCommand}"
                           />
             </MenuItem>
-            <MenuItem Header="ヘルプ（_H）"/>
+            <MenuItem Header="ヘルプ（_H）">
+                <MenuItem Header="バージョン情報（_V）"
+                          Command="{Binding VersionDialogCommand}"
+                          b:OpenDialogBehavior.WindowType="{x:Type vw:VersionView}"
+                          b:OpenDialogBehavior.DataContext="{Binding VersionViewModel}"
+                          b:OpenDialogBehavior.Callback="{Binding VersionDialogCallback}"
+                          />
+            </MenuItem>
+
         </Menu>
 
         <StatusBar DockPanel.Dock="Bottom"></StatusBar>

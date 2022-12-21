@@ -63,6 +63,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Views\Behaviors\CommonDialogBehavior.cs" />
+    <Compile Include="Views\Behaviors\OpenDialogBehavior.cs" />
     <Compile Include="Views\Behaviors\WindowClosingBehavior.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
